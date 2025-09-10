@@ -1,0 +1,117 @@
+body {
+    background: #fff;
+    color: #000;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    width: 320px;
+    padding: 24px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.display {
+    background: #fff;
+    color: #000;
+    font-size: 2.2rem;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 16px 8px;
+    text-align: right;
+    min-height: 48px;
+    margin-bottom: 8px;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 1px;
+    overflow-x: auto;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    padding: 16px 0;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    transition: background 0.1s, color 0.1s;
+}
+
+.btn:active {
+    background: #000;
+    color: #fff;
+}
+
+.btn.zero {
+    grid-column: span 2;
+}
+
+.history-panel {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 10px 8px 8px 8px;
+    font-family: 'DM Sans', sans-serif;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.btn-clear-history {
+    border: none;
+    background: none;
+    color: #000;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: background 0.1s, color 0.1s;
+}
+
+.btn-clear-history:active {
+    background: #000;
+    color: #fff;
+} 
+
+.history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.98rem;
+    max-height: 80px;
+    overflow-y: scroll;
+}
+
+.history-list li {
+    border-bottom: 1px solid #eee;
+    padding: 2px 0;
+    color: #222;
+    font-family: 'DM Sans', sans-serif;
+    word-break: break-all;
+}

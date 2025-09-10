@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="history-panel">
+            <div class="history-header">
+                <span>History</span>
+                <button class="btn btn-clear-history" id="clear-history" title="Clear History">🗑</button>
+            </div>
+            <ul class="history-list" id="history-list"></ul>
+        </div>
+        <div class="buttons">
+            <button class="btn" data-action="clear">C</button>
+            <button class="btn" data-action="backspace">⌫</button>
+            <button class="btn" data-action="percent">%</button>
+            <button class="btn" data-action="divide">÷</button>
+            <button class="btn" data-action="7">7</button>
+            <button class="btn" data-action="8">8</button>
+            <button class="btn" data-action="9">9</button>
+            <button class="btn" data-action="multiply">×</button>
+            <button class="btn" data-action="4">4</button>
+            <button class="btn" data-action="5">5</button>
+            <button class="btn" data-action="6">6</button>
+            <button class="btn" data-action="subtract">−</button>
+            <button class="btn" data-action="1">1</button>
+            <button class="btn" data-action="2">2</button>
+            <button class="btn" data-action="3">3</button>
+            <button class="btn" data-action="add">+</button>
+            <button class="btn zero" data-action="0">0</button>
+            <button class="btn" data-action="dot">.</button>
+            <button class="btn" data-action="equals">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
